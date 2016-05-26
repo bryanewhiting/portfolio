@@ -33,24 +33,7 @@
                     }
                 }
             });
-            /*====================================
-            VEGAS SLIDESHOW SCRIPTS
-            ======================================*/
-            // $(function () {
-            //     $.vegas('slideshow', {
-            //         backgrounds: [
-            //           { src: 'assets/img/backgroundimage.jpg', fade: 1000, delay: 9000, },
-                      
-                     
-            //         ]
-            //     })('overlay', {
-            //         /** SLIDESHOW OVERLAY IMAGE **/
-            //         // src: 'assets/plugins/vegas/overlays/14.png' // THERE ARE TOTAL 01 TO 15 .png IMAGES AT THE PATH GIVEN, WHICH YOU CAN USE HERE
-            //     });
 
-            // });
-
-          
             /*====================================
                WRITE YOUR SCRIPTS BELOW 
            ======================================*/
