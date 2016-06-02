@@ -1,191 +1,325 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<!--<![endif]-->
+
 <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
-    <title>Portfolio of Bryan Whiting</title>
-    <!--REQUIRED STYLE SHEETS-->
-    <!-- BOOTSTRAP CORE STYLE CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <!-- CUSTOM STYLE CSS -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- GOOGLE FONT -->
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <title>Bryan Whiting's Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/bew.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="icon" type="image/png" href="favicon.ico" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!--     IMAGE ZOOM SCRIPTS -->
-    <script src='js/jquery-1.8.3.min.js'></script>
-    <script src='js/jquery.elevatezoom.js'></script>
+
 </head>
-<body>
+
+<body id="page-top" class="index">
+
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://www.thiswebsite.com">Bryan Whiting</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Bryan Whiting</a>
             </div>
-            <!-- Collect the nav links for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home">HOME</a>
+                    <li class="hidden">
+                        <a href="#page-top"></a>
                     </li>
-                    <li><a href="#about">ABOUT</a>
+                    <li>
+                        <a class="page-scroll" href="#page-top">Home</a>
                     </li>
-                    <li><a href="#contact-me">CONTACT</a>
+                    <li>
+                        <a class="page-scroll" href="#languages">Languages</a>
                     </li>
-                    <li><a href="mailto:bryanewhiting@gmail.com"><strong>e-mail:</strong> bryanewhiting@gmail.com</a>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
+        <!-- /.container-fluid -->
     </nav>
-    <!--End Navigation -->
 
-
-    <!--Header section  -->
-    <div class="container" id="home">
-        <div class="row text-center">
-            <div class="col-md-12">
-                <h2 class="head-main">My Work</h2> 
-                <table>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <td>
-                        <div class="col-md-6">
-                            <a href="work/AidenRemmeBenefit/index.html" target="_blank  "><img id="zoom_01" src="img/AidenBenefitImageSmall.png" data-zoom-image="img/AidenBenefitImage.png"/></a>
-                            <script>
-                                $('#zoom_01').elevateZoom({
-                                    zoomType: "inner",
-                                    cursor: "crosshair",
-                                    zoomWindowFadeIn: 500,
-                                   zoomWindowFadeOut: 750
-                                }); 
-                            </script>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="col-md-6">
-                        </div>
-                    </td>
-                </table>
-            <h5 class="h3-header">(Click inside the image to be taken to the site)</h5>
-                <div class="head-last"></div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To My Portfolio!</div>
             </div>
         </div>
-    </div>
-    <!--End Header section  -->
+    </header>
 
-
-    <!--About Section-->
-    <section class="for-full-back color-white" id="about">
+    <!-- Services Section -->
+    <section id="languages">
         <div class="container">
-            <div class="row text-center for-parallax-one">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2 class="head-main">About Me</h2> 
-                    <h4>You're likely here to see my work, not read my biography. I like learning new ideas, concepts and designs. If you'd like to know more,<a href="#contact-me"> send me a message!</a>
-                    </h4>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Languages</h2>
+                    <h3 class="section-subheading text-muted">Languages I currently work in (ever expanding).</h3>
                 </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <img src="img/html5.png" />
+                    <h4 class="service-heading">HTML5</h4>
+<!--                     <p class="text-muted"></p> -->
+                </div>
+                <div class="col-md-3">
+                    <img src="img/css3.png" height="120px" width="120px" />
+                    <h4 class="service-heading">CSS3</h4>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/js.png" height="120px" width="120px" />
+                    <h4 class="service-heading">JS</h4>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/jquery.gif" height="120px width="120px" />
+                    <h4 class="service-heading">JQuery</h4>
             </div>
         </div>
     </section>
-    <!--End About Section-->
 
-
-    <!-- Contact Section -->
-    <section class="for-full-back color-white " id="contact-me">
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 contact-cls">
-                    <h3>CONTACT ME </h3>
-                    <div>
-                        <span><i class="fa fa-envelope-o"></i>&nbsp;E-Mail: <a href="mailto:bryanewhiting@gmail.com" id="no-format"> bryan@whitingdevelopment.com</a></span>
-                        <br />
-                        <span><i class="fa fa-globe"></i>&nbsp;Web: <a href="#home" id="no-format">www.whitingdevelopment.com</a></span>
-                        <br />
-                    </div>
-                    <br />
-                    <div id="social-icon">
-                        <a href="https://www.facebook.com/bryan.whiting.54" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-                        <a href="https://www.linkedin.com/in/bryan-whiting-96a149114" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-                        <a href="https://plus.google.com/u/0/103786163044654004556" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
-                        <a href="https://www.pinterest.com/bryanewhiting/" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a>
-                    </div>
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">What I have done (may be in progress!)</h3>
                 </div>
-                <div class="col-md-7">
-                    <h2>Please contact me with the below form.</h2>
-                    <form method="POST" action="mailto:bryanewhiting@gmail.com">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" required="required" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <input name="email address" type="text" class="form-control" required="required" placeholder="Email address">
-                                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
+                        <img src="img/mywork/aidenremmebenefit.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Aiden Remme's Benefit</h4>
+                        <p class="text-muted">HTML, CSS, JS</p>
+                    </div>
+                </div>
+<!--                 <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Startup Framework</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">Who am I?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" align=center>
+                <p>Getting a little personal, aren't we? I am a career underwriter who is tired of being a career underwriter. New ideas, concepts and designs interest me. If you have a specific question you should probably just <a class="page-scroll" href="#contact">ask.</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Me</h2>
+                    <h3 class="section-subheading text-muted">Please use the below form to contact me.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
-                            <div class="col-md-12 col-sm-12">
+                            <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Message"></textarea>
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-default">Submit Request</button>
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
                                 </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
                             </div>
                         </div>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!--End Contact Section -->
-    <!--footer Section -->
-    <div class="for-full-back " id="footer">
-        <div class="col-md-12">
-            2016 www.whitingdevelopment.com | All Right Reserved
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <span class="copyright">Copyright &copy; www.whitingdevelopment.com 2016</span>
+                </div>
+<!--                 <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Aiden Remme's Benefit</h2>
+                            <p class="item-intro text-muted">A small website for Aiden Remme's Benefit utilizing HTML, CSS and JS.</p>
+                            <img class="img-responsive img-centered" src="img/mywork/aidenremmebenefitlarge.png" alt="">
+                            <p>This was a website for the benefit of Aiden Remme, who was diagnosed with cancer. It was a small site that contained a list of the auction items, a small piece about Aiden and a way to get in contact with the Remme family.</p>
+                            <p>
+                                <strong><a href="work/AidenRemmeBenefit/index.html" target="_blank">You can view the website here</a></p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!--End footer Section -->
-    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-    <!-- CORE JQUERY  -->
-    <script src="plugins/jquery-1.10.2.js"></script>
-    <!-- BOOTSTRAP CORE SCRIPT   -->
-    <script src="plugins/bootstrap.js"></script>
-    <!-- VEGAS SLIDESHOW SCRIPTS -->
-    <script src="plugins/vegas/jquery.vegas.min.js"></script>
-    <script src="plugins/jquery.parallax-1.1.3.js"></script>
-    <!-- CUSTOM SCRIPTS -->
-    <script src="js/custom.js"></script>
 
+    <!-- Portfolio Modal 2 -->
+<!--     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>New Work 9933</h2>
+                            <p class="item-intro text-muted">Placeholder for new work 9933</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
+                            <p><a href="http://designmodo.com/startup/?u=787">Placeholder for new work 9933</a></p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/scrolling.js"></script>
 
 </body>
+
 </html>
